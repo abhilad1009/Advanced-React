@@ -12,12 +12,13 @@ const UseStateObject = () => {
   const [message, setMessage] = useState("random message");
   const changeMessage = () => {
     // setPerson({ ...person, message: "hello world" });
+    setMessage("Hello world");
   };
   return (
     <>
-      <h3>{person.name}</h3>
-      <h3>{person.age}</h3>
-      <h3>{person.message}</h3>
+      <h3>{name}</h3>
+      <h3>{age}</h3>
+      <h3>{message}</h3>
       <button className="btn" onClick={changeMessage}>
         Change messase
       </button>
